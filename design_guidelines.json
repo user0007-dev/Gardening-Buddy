@@ -1,0 +1,201 @@
+{
+  "brand_identity": {
+    "name": "Verdant",
+    "tagline": "Cultivate your sanctuary.",
+    "description": "A home gardening app that blends scientific precision with the therapeutic art of growing. Designed for urban dwellers and beginners who want to reconnect with nature.",
+    "values": [
+      "Organic",
+      "Patient",
+      "Tactile",
+      "Scientific"
+    ],
+    "voice": "Encouraging, knowledgeable, calm, and grounded. Avoids tech-heavy jargon; speaks in 'growth' metaphors."
+  },
+  "design_system": {
+    "typography": {
+      "font_family": {
+        "heading": "Playfair Display, serif",
+        "body": "Manrope, sans-serif",
+        "mono": "JetBrains Mono, monospace"
+      },
+      "weights": {
+        "heading": "font-semibold (600) or font-black (900)",
+        "body": "font-normal (400) or font-medium (500)"
+      },
+      "usage": {
+        "h1": "text-5xl md:text-7xl font-heading tracking-tight leading-none text-primary-900",
+        "h2": "text-3xl md:text-5xl font-heading tracking-tight text-primary-800",
+        "h3": "text-2xl font-heading font-medium text-primary-700",
+        "body_large": "text-lg md:text-xl font-body leading-relaxed text-stone-700",
+        "body_default": "text-base font-body leading-relaxed text-stone-600",
+        "caption": "text-sm font-mono tracking-wide uppercase text-stone-500"
+      }
+    },
+    "colors": {
+      "palette": {
+        "primary": {
+          "DEFAULT": "#1A4D2E",
+          "foreground": "#FDFCF8",
+          "50": "#E8F5E9",
+          "100": "#C8E6C9",
+          "200": "#A5D6A7",
+          "300": "#81C784",
+          "400": "#66BB6A",
+          "500": "#4CAF50",
+          "600": "#43A047",
+          "700": "#388E3C",
+          "800": "#2E7D32",
+          "900": "#1A4D2E"
+        },
+        "secondary": {
+          "DEFAULT": "#E07A5F",
+          "foreground": "#FDFCF8",
+          "light": "#F2CCB7",
+          "dark": "#D05B3B"
+        },
+        "accent": {
+          "DEFAULT": "#D9F99D",
+          "foreground": "#1A4D2E",
+          "hover": "#BEF264"
+        },
+        "background": {
+          "DEFAULT": "#FDFCF8",
+          "paper": "#F5F5F0",
+          "subtle": "#EBEBE6"
+        },
+        "text": {
+          "DEFAULT": "#2C3329",
+          "muted": "#5C6658",
+          "light": "#8D9688"
+        }
+      },
+      "gradients": {
+        "hero": "linear-gradient(180deg, rgba(253,252,248,0) 0%, #FDFCF8 100%)",
+        "overlay": "linear-gradient(to bottom, rgba(26, 77, 46, 0.2), rgba(26, 77, 46, 0.8))"
+      }
+    },
+    "spacing": {
+      "container_padding": "p-6 md:p-12 lg:p-24",
+      "section_gap": "gap-16 md:gap-32",
+      "element_gap": "gap-4 md:gap-8"
+    },
+    "radius": {
+      "default": "rounded-2xl",
+      "button": "rounded-full",
+      "card": "rounded-3xl"
+    },
+    "shadows": {
+      "soft": "0 4px 20px -2px rgba(26, 77, 46, 0.08)",
+      "hover": "0 10px 40px -10px rgba(26, 77, 46, 0.15)",
+      "glass": "0 8px 32px 0 rgba(31, 38, 135, 0.07)"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-8 py-6 text-lg font-medium transition-all hover:scale-105 active:scale-95 shadow-soft",
+      "secondary": "bg-secondary text-secondary-foreground hover:bg-secondary/90 rounded-full px-6 py-4 font-medium transition-all shadow-soft",
+      "outline": "border-2 border-primary text-primary hover:bg-primary/5 rounded-full px-6 py-4 font-medium transition-all",
+      "ghost": "text-primary hover:bg-primary/5 rounded-lg px-4 py-2 font-medium transition-colors"
+    },
+    "cards": {
+      "plant_card": "bg-white rounded-3xl overflow-hidden shadow-soft hover:shadow-hover transition-all duration-300 group border border-stone-100",
+      "task_card": "bg-background-paper rounded-2xl p-6 border-l-4 border-primary flex items-center justify-between hover:bg-white transition-colors",
+      "glass_panel": "bg-white/70 backdrop-blur-xl border border-white/20 shadow-glass rounded-3xl"
+    },
+    "inputs": {
+      "default": "bg-white border-stone-200 focus:border-primary focus:ring-2 focus:ring-primary/20 rounded-xl px-4 py-3 transition-all placeholder:text-stone-400",
+      "search": "bg-background-paper border-none focus:ring-0 rounded-full px-6 py-4 shadow-inner"
+    },
+    "navigation": {
+      "header": "fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-stone-100/50 transition-all",
+      "sidebar": "bg-primary text-primary-foreground h-screen p-6 flex flex-col gap-4"
+    }
+  },
+  "layout_strategies": {
+    "landing_page": {
+      "grid": "grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8",
+      "hero_section": "col-span-full min-h-[80vh] flex items-center justify-center relative overflow-hidden",
+      "feature_block": "col-span-1 md:col-span-6 lg:col-span-4 aspect-square p-8 rounded-3xl bg-background-paper hover:bg-primary hover:text-white transition-colors group"
+    },
+    "dashboard": {
+      "grid": "grid grid-cols-1 md:grid-cols-4 gap-6 p-6",
+      "main_content": "col-span-1 md:col-span-3 space-y-8",
+      "sidebar_widget": "col-span-1 bg-white rounded-3xl p-6 shadow-soft h-fit sticky top-24"
+    }
+  },
+  "motion": {
+    "library": "framer-motion",
+    "guidelines": {
+      "page_transition": {
+        "initial": { "opacity": 0, "y": 20 },
+        "animate": { "opacity": 1, "y": 0 },
+        "exit": { "opacity": 0, "y": -20 },
+        "transition": { "duration": 0.4, "ease": "easeOut" }
+      },
+      "hover_lift": {
+        "whileHover": { "y": -5 },
+        "transition": { "type": "spring", "stiffness": 300 }
+      },
+      "stagger_children": {
+        "animate": "show",
+        "initial": "hidden",
+        "variants": {
+          "hidden": { "opacity": 0 },
+          "show": {
+            "opacity": 1,
+            "transition": { "staggerChildren": 0.1 }
+          }
+        }
+      }
+    }
+  },
+  "assets": {
+    "icons": {
+      "library": "lucide-react",
+      "style": "stroke-width={1.5} className='text-current'"
+    },
+    "images": {
+      "hero_bg": {
+        "url": "https://images.unsplash.com/photo-1738951260025-cfaf2517e698?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1NzZ8MHwxfHNlYXJjaHwyfHxsdXNoJTIwdmVnZXRhYmxlJTIwZ2FyZGVuJTIwY2xvc2UlMjB1cHxlbnwwfHx8fDE3NjUyNTc0MDZ8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Lush green garden close up",
+        "category": "hero"
+      },
+      "plant_id_demo": {
+        "url": "https://images.unsplash.com/photo-1712912828110-7d541554f05d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwyfHxwZXJzb24lMjBoYW5kcyUyMGhvbGRpbmclMjBzb2lsJTIwcGxhbnR8ZW58MHx8fHwxNzY1MjU3NDA4fDA&ixlib=rb-4.1.0&q=85",
+        "alt": "Person holding a plant for identification",
+        "category": "feature"
+      },
+      "dashboard_accent": {
+        "url": "https://images.unsplash.com/photo-1743186496239-128f8364d076?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDN8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBtaW5pbWFsaXN0JTIwcGxhbnQlMjBwb3QlMjBpbmRvb3J8ZW58MHx8fHwxNzY1MjU3NDEwfDA&ixlib=rb-4.1.0&q=85",
+        "alt": "Minimalist indoor plant pot",
+        "category": "dashboard"
+      },
+      "harvest_success": {
+        "url": "https://images.unsplash.com/photo-1723347101054-c246b0034f11?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwyfHxmcmVzaCUyMHZlZ2V0YWJsZXMlMjBoYXJ2ZXN0JTIwYmFza2V0fGVufDB8fHx8MTc2NTI1NzQxMXww&ixlib=rb-4.1.0&q=85",
+        "alt": "Basket of fresh harvested vegetables",
+        "category": "success"
+      }
+    }
+  },
+  "tech_stack": {
+    "framework": "React",
+    "styling": "Tailwind CSS",
+    "components": "Shadcn UI",
+    "icons": "Lucide React",
+    "animation": "Framer Motion",
+    "charts": "Recharts",
+    "notifications": "Sonner"
+  },
+  "universal_guidelines": [
+    "Do not use generic 'SaaS Blue' or 'Bootstrap' layouts.",
+    "Use 2-3x more padding than usual to create a sense of luxury and calm.",
+    "Always add 'data-testid' to interactive elements.",
+    "Use 'sonner' for all toast notifications.",
+    "Ensure all text meets APCA contrast standards, especially on the primary green background.",
+    "Avoid pure black (#000000); use dark green or charcoal for text.",
+    "Images must be high-quality and organic, avoiding 'stock photo' looks where possible.",
+    "Implement 'glassmorphism' with 'backdrop-blur-xl' for overlays to maintain context.",
+    "Use 'Playfair Display' for all headings to establish the brand voice."
+  ],
+  "instructions_to_main_agent": "Follow the 'Verdant' design system strictly. Prioritize the 'Organic & Earthy' archetype. Use the provided image URLs for the respective sections. When building the dashboard, use the 'Bento' grid layout. For the landing page, use the 'Tetris' grid. Ensure the 'Plant ID' feature feels magical with smooth transitions and clear feedback."
+}
